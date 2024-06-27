@@ -1,0 +1,368 @@
+.collections-area {
+    padding-top: 100px;
+    padding-bottom: 95px;
+    background-color: #f9f9f9; /* Example background color */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: hidden; /* Ensures box shadow doesn't overflow */
+    position: relative; /* Required for pseudo-element */
+}
+
+/* Pseudo-element to create diagonal decoration */
+.collections-area:before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust position as needed */
+    left: -20px; /* Adjust position as needed */
+    width: 100%;
+    height: 40px; /* Adjust size as needed */
+    background-color: #ffffff; /* Background color same as container */
+    transform: rotate(-3deg); /* Adjust angle for diagonal */
+    z-index: 1; /* Ensure it stays below content */
+}
+
+.container {
+    position: relative; /* Ensure stacking context */
+    z-index: 2; /* Place above pseudo-element */
+}
+
+/* Styling for the owl-carousel items */
+.collection-product {
+    background-color: #ffffff; /* Example background color */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: hidden; /* Ensures box shadow doesn't overflow */
+    transition: transform 0.3s ease-in-out; /* Smooth transform transition */
+    position: relative;
+}
+
+.collection-product:hover {
+    transform: translateY(-5px); /* Example transform on hover */
+}
+
+.collection-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px; /* Ensure image corners match container */
+    border-top-right-radius: 8px; /* Ensure image corners match container */
+}
+
+.collection-content {
+    padding: 20px;
+}
+
+.collection-content h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.collection-content span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.section-title-3 h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Owl Carousel specific styles */
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments as needed */
+@media (max-width: 768px) {
+    .collections-area {
+        padding-top: 80px;
+        padding-bottom: 75px;
+    }
+    
+    .collection-product {
+        border-radius: 6px;
+    }
+    
+    .collection-content {
+        padding: 15px;
+    }
+}
+
+
+
+.tab-content.jump {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Adjust the negative margin to counteract padding */
+}
+
+.product-wrap-5 {
+    background-color: #ffffff; /* Background color */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 8px; /* Border radius */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.product-wrap-5:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow on hover */
+    transform: translateY(-5px); /* Lifts the box slightly on hover */
+}
+
+.product-wrap-5 .product-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-wrap-5 .product-img img {
+    width: 100%;
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Optional: Image transformation on hover */
+}
+
+.product-wrap-5:hover .product-img img {
+    transform: scale(1.1); /* Optional: Scale up image on hover */
+}
+
+.product-content-5 {
+    padding: 20px;
+}
+
+.product-content-5 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-content-5 .price-5 {
+    font-size: 14px;
+    color: #999999;
+}
+
+.product-content-5 .price-5 span {
+    display: block;
+    margin-top: 5px;
+}
+
+.product-wrap-5 .product-action-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background for action buttons */
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.product-wrap-5:hover .product-action-4 {
+    background-color: rgba(255, 255, 255, 0.95); /* Lighter background on hover */
+}
+
+.product-wrap-5 .product-action-4 a {
+    color: #333333;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition for icons */
+    margin-left: 5px;
+}
+
+.product-wrap-5 .product-action-4 a:hover {
+    color: #6f42c1; /* Change color on hover */
+}
+
+.product-wrap-5 .product-action-4 .pro-same-action {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .product-wrap-5 {
+        margin-bottom: 30px; /* Adjust spacing on smaller screens */
+    }
+}
+
+
+.subscribe-area-3 {
+    background-color: #f9f9f9; /* Background color */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.subscribe-style-3 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff; /* Container background color */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: all 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.subscribe-style-3:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+    transform: translateY(-5px); /* Lifts the box slightly on hover */
+    border-color: #6f42c1; /* Border color change on hover */
+}
+
+.subscribe-style-3 h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease; /* Transition for heading color */
+}
+
+.subscribe-style-3 p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+    transition: color 0.3s ease; /* Transition for paragraph color */
+}
+
+.mc-form {
+    position: relative;
+}
+
+.mc-form input.email {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 15px;
+    transition: all 0.3s ease; /* Transition for input field */
+}
+
+.mc-form input.email:focus {
+    outline: none;
+    border-color: #6f42c1; /* Border color on focus */
+}
+
+.mc-form .clear-3 {
+    text-align: center;
+}
+
+.mc-form .button {
+    background-color: #6f42c1; /* Button background color */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for button background and transform */
+}
+
+.mc-form .button:hover {
+    background-color: #553c9a; /* Adjusted button background color on hover */
+    transform: scale(1.05); /* Scale button on hover */
+}
+
+@media (max-width: 768px) {
+    .subscribe-style-3 {
+        padding: 20px;
+    }
+}
+
+
+
+.product-tab-list-2 {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between links */
+    padding: 10px; /* Adjust padding as needed */
+    border: 2px solid #333; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+
+    /* Transition for smooth animation */
+    transition: all 0.3s ease;
+}
+
+.product-tab-list-2 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Padding inside links */
+}
+
+.product-tab-list-2 a.active {
+    background-color: #333; /* Active link background color */
+    border-radius: 10px; /* Match the parent's border radius */
+}
+
+/* Hover effect for links */
+.product-tab-list-2 a:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.filter-active {
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+/* Animation when hovering over the entire div */
+.product-tab-list-2:hover {
+    transform: translateY(-5px); /* Example of animation: lift up slightly */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Adjusted shadow on hover */
+}
+
+.filter-active {
+    background-color: black;
+    border: 2px solid #333; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    width: fit-content; /* Adjusts the width to fit content */
+
+    /* Transition for smooth animation */
+    transition: all 0.3s ease;
+}
+
+.filter-active a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Makes the link fill the entire div */
+    padding: 10px 20px; /* Padding inside the link */
+}
+
+.filter-active:hover {
+    transform: translateY(-5px); /* Example of animation: lift up slightly */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Adjusted shadow on hover */
+}
+
+.filter-active:hover a {
+    background-color: #333; /* Darker background on hover */
+    border-radius: 10px; /* Match the parent's border radius */
+}
+
+
+.section-title-3 {
+    background-color: #333; /* Background color */
+    padding: 10px 20px; /* Padding inside the div */
+    border: 2px solid #555; /* Border style */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+
+    /* Transition for smooth animation */
+    transition: all 0.3s ease;
+}
+
+.section-title-3 h4 {
+    margin: 0; /* Remove default margin */
+    color: white; /* Text color */
+}
+
+.section-title-3:hover {
+    transform: translateY(-3px); /* Example of animation: lift up slightly */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Adjusted shadow on hover */
+    background-color: #555; /* Darker background on hover */
+}

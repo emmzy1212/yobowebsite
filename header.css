@@ -1,0 +1,26 @@
+    /* Styles for the header area */
+    .header-area {
+        background-color: #ffffff; /* Background color */
+        border: 1px solid #e0e0e0; /* Border color and thickness */
+        border-radius: 8px; /* Border radius for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+        transition: all 0.3s ease; /* Smooth transition for all properties */
+        padding: 15px; /* Padding inside the header for better spacing */
+        margin-bottom: 20px; /* Optional: Adding some margin at the bottom */
+    }
+
+    /* Hover effect for the header area */
+    .header-area:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+        transform: translateY(-2px); /* Lift the header slightly on hover */
+        background-color: #f7f7f7; /* Background color on hover */
+        border-color: #d0d0d0; /* Border color on hover */
+    }
+
+    /* Styling for the logo inside the header */
+    .logo img {
+        max-width: 150px; /* Adjust the maximum width of the logo */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+ 

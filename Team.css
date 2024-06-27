@@ -1,0 +1,342 @@
+.team-wrapper {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Initial box shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.team-wrapper:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.team-wrapper:hover .team-img img {
+    transform: scale(1.1); /* Image zoom on hover */
+}
+
+.team-content {
+    padding: 20px 0;
+}
+
+.team-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-content span {
+    font-size: 14px;
+    color: #777;
+    display: block;
+}
+
+
+
+
+  /* Custom CSS for the team section */
+  .team-area {
+    background-color: #f5f5f5; /* Background color */
+    padding: 95px 0 70px; /* Adjust padding as needed */
+}
+
+.team-area .section-title-2 {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.team-area .section-title-2 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team-area .section-title-2 p {
+    font-size: 16px;
+}
+
+/* Style for the team member wrapper */
+.team-wrapper {
+    background-color: #fff; /* Team member background color */
+    padding: 20px;
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.team-wrapper:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+.team-wrapper .team-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team-wrapper .team-img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.team-wrapper .team-action {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.team-wrapper .team-action a {
+    color: #333;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.team-wrapper .team-action a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.team-wrapper .team-content {
+    margin-top: 20px;
+}
+
+.team-wrapper .team-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-wrapper .team-content span {
+    display: block;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .team-area .section-title-2 h2 {
+        font-size: 30px;
+    }
+    .team-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+   /* Custom CSS for the section title */
+   .section-title-2 {
+    padding: 20px;
+    background-color: #f5f5f5; /* Background color */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Border radius */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.section-title-2:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.section-title-2 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title-2 p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title-2 h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.breadcrumb-content {
+    background-color: white;
+    color: white;
+}
+.breadcrumb-content a {
+    color: #333;
+}
+
+
+.breadcrumb-content {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Ensures the width fits content */
+    position: relative;
+    overflow: hidden;
+}
+
+.breadcrumb-content:hover {
+    transform: translateY(-3px); /* Move up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+.breadcrumb-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb-content ul li {
+    margin-right: 10px;
+}
+
+.breadcrumb-content ul li:last-child {
+    margin-right: 0;
+}
+
+.breadcrumb-content a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer container and styling */
+.footer-area {
+    background-color: #f9f9f9;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* Footer border with transition and border-radius */
+.footer-border {
+    border-top: 1px solid #ccc;
+    transition: border-width 0.3s ease-in-out;
+    border-radius: 10px; /* Adjust border radius as needed */
+    overflow: hidden; /* Ensures border radius applies correctly */
+}
+
+/* Animation on hover */
+.footer-border:hover {
+    border-width: 4px; /* Increase border width on hover */
+}
+
+/* Footer widget styles (adjust margin-left for alignment) */
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+/* Footer widget title */
+.footer-title h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Footer widget list styles */
+.footer-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-list ul li {
+    margin-bottom: 10px;
+}
+
+.footer-list ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list ul li a:hover {
+    color: #000;
+}
+
+/* Subscribe section styles */
+.subscribe-style p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Subscribe form input and button */
+.subscribe-form .email {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Adjust border radius as needed */
+    margin-bottom: 10px;
+}
+
+.subscribe-form .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Adjust border radius as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form .button:hover {
+    background-color: #555;
+}
+
+/* Optional: Styling for footer logo */
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optional: Adjust margins for alignment */
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-75 {
+    margin-left: 75px;
+}
+
+.ml-70 {
+    margin-left: 70px;
+}
+
+

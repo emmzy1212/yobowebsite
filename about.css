@@ -1,0 +1,90 @@
+/* Styling for welcome-area, banner-area, and about-mission-area */
+
+.welcome-area, .banner-area, .about-mission-area {
+    background-color: #fff; /* Background color */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding-top: 100px; /* Adjust padding as needed */
+    padding-bottom: 70px; /* Adjust padding as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-area:hover, .banner-area:hover, .about-mission-area:hover {
+    transform: translateY(-5px); /* Move the element up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced box shadow on hover */
+}
+
+.single-banner, .single-mission {
+    padding: 30px; /* Padding inside each banner or mission block */
+    text-align: center;
+}
+
+.single-mission h3 {
+    color: #333; /* Mission title color */
+    margin-bottom: 15px;
+}
+
+.single-mission p {
+    color: #666; /* Mission text color */
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+.single-mission {
+    background-color: #000; /* Black background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Nice box shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners for a nice look */
+}
+
+/* Hover effect */
+.single-mission:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker box shadow on hover */
+}
+
+/* Optional: Animation example */
+@keyframes box-shadow-animation {
+    0% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.single-mission {
+    animation: box-shadow-animation 0.3s ease forwards; /* Apply animation */
+}
+
+
+        /* Add custom styles here */
+        .single-mission {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .single-mission:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+        }
+        
+        .single-mission h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .single-mission p {
+            color: white;
+            line-height: 1.6;
+        }
